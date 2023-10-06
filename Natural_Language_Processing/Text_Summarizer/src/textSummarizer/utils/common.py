@@ -7,10 +7,8 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 
-## For ConfigBox Explaination refere trials.pynb
-## To refere dict value we use d[key] . But with ConfigBox you can use d.key
-## @ensure_annotations will make sure data type of params passed in function are validated or not.
-## If you pass wrong value of different data type which function doesnt accept. It will throw exception.
+
+
 @ensure_annotations
 def read_yaml(path_to_yaml: Path) -> ConfigBox:
     """reads yaml file and returns

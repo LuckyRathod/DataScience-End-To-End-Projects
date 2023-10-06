@@ -14,9 +14,7 @@ logging.basicConfig(
     format= logging_str,
 
     handlers=[
-        ## Filehandle will create folder logs in current directory.
         logging.FileHandler(log_filepath),
-        ## StreamHandler will log messages to terminal
         logging.StreamHandler(sys.stdout)
     ]
 )
