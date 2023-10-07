@@ -4,8 +4,8 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = 'cellsegmentation'
-
+## Instead of src we have project_name folder named as cellSegmentation which includes everything
+project_name = 'cellSegmentation'
 
 list_of_files = [
     ## You cannot create empty folder thats why we are using .gitkeep
