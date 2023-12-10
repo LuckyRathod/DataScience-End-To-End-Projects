@@ -10,4 +10,4 @@ COPY . ./
 RUN pip install tensorflow==2.1.0 tensorflow-datasets Flask gunicorn
 
 # Run the flask service on container startup
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 SAGunicorns
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 SAGunicorn:app
